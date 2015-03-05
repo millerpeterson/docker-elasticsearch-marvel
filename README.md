@@ -1,5 +1,5 @@
-docker-elasticsearch
-====================
+docker-elasticsearch (+marvel)
+==============================
 
 Elasticsearch master node with optional ec2 discovery.  Elasticsearch indices are rotated every two weeks and logs every week.
 
