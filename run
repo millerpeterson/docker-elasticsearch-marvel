@@ -30,4 +30,9 @@ discovery:
     groups: $ES_CLUSTER_NAME
 EOF
 fi
-/usr/bin/supervisord -c /etc/supervisor/conf.d/elasticsearch.conf
+
+/usr/bin/supervisord -c /etc/supervisor/conf.d/elasticsearch.conf &
+
+mkdir /opt/elasticsearch/logs
+touch /opt/elasticsearch/logs/elasticsearch.log
+tail -f /opt/elasticsearch/logs/elasticsearch.log
